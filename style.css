@@ -21,10 +21,10 @@ body::before{
 body::after{
     content: ' ';
     position: absolute;
-    top: -20px;
-    left: 0;
     width: 100%;
     height: 100%;
+    top: -20px;
+    left: 0;
     background: linear-gradient(160deg, #03a9f4, #03a9f4 50%, transparent 50%, transparent);
     animation: animate 5s ease-in-out infinite;
 }
@@ -42,20 +42,20 @@ body::after{
 .container::before{
     content: ' ';
     position: absolute;
-    bottom: -150px;
     width: 100%;
     height: 60px;
+    bottom: -150px;
     background: radial-gradient(rgba(0,0,0,0.2), transparent, transparent);
     border-radius: 50%;
 }
 .box{
     position: relative;
-    z-index: 1;
     width: 400px;
     height: 400px;
+    z-index: 1;
     backdrop-filter: blur(25px);
-    border-radius: 50%;
     border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
     animation: animate 5s ease-in-out infinite;
     animation-delay: -2.5s;
 }
@@ -83,41 +83,39 @@ body::after{
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #fff;
-    border-radius: 50%;
     z-index: 10000;
+    border-radius: 50%;
+    background: #fff;
 }
-.clock .hour,
-.clock .min,
-.clock .sec{
+.hour, .min, .sec{
     position: absolute;
 }
-.clock .hour, .hr{
+.hour, .hr{
     width: 160px;
     height: 160px;
 }
-.clock .min, .mn{
+.min, .mn{
     width: 190px;
     height: 190px;
 }
-.clock .sec, .sc{
+.sec, .sc{
     width: 230px;
     height: 230px;
 }
 .hr, .mn, .sc{
-display: flex;
-justify-content: center;
-position: absolute;
-border-radius: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 50%;
 }
 .hr::before{
     content: ' ';
     position: absolute;
     width: 8px;
     height: 80px;
-    background: #ff105e;
     z-index: 11;
     border-radius: 6px;
+    background: #ff105e;
 }
 .mn::before{
     content: ' ';
@@ -133,7 +131,7 @@ border-radius: 50%;
     position: absolute;
     width: 2px;
     height: 150px;
-    background: #fff;
     z-index: 12;
     border-radius: 6px;
+    background: #fff;
 }
